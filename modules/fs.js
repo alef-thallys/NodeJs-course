@@ -1,35 +1,35 @@
 const fs = require("fs");
 const path = require("path");
 
-// Criar uma pasta
-fs.mkdir(path.join(__dirname, "/teste"), (error) => {
+// Create a folder
+fs.mkdir(path.join(__dirname, "/test"), (error) => {
   if (error) return console.log("Erro:", error);
-  console.log("Pasta criada com sucesso!");
+  console.log("Folder successfully created!");
 });
 
-// Criar arquivo
+// Create a file
 fs.writeFile(
-  path.join(__dirname, "/teste", "teste.txt"),
+  path.join(__dirname, "/test", "test.txt"),
   "hello node! ",
   (error) => {
     if (error) return console.log("Erro:", error);
-    console.log("Arquivo criado com sucesso!");
+    console.log("File successfully created!");
   }
 );
 
-// Adicionar à um arquivo
+// Add to a file
 fs.appendFile(
-  path.join(__dirname, "/teste", "teste.txt"),
+  path.join(__dirname, "/test", "test.txt"),
   "hello world! ",
   (error) => {
     if (error) return console.log("Erro:", error);
-    console.log("Arquivo modificado com sucesso!");
+    console.log("Successfully modified file!");
   }
 );
 
-// Ler arquivos
+// Read files
 fs.readFile(
-  path.join(__dirname, "/teste", "teste.txt"),
+  path.join(__dirname, "/test", "test.txt"),
   "utf-8",
   (error, data) => {
     if (error) return console.log("Erro:", error);
