@@ -1,16 +1,16 @@
 const path = require("path");
 
-// Nome do arquivo atual
+// Current file name
 console.log(path.basename(__filename));
 
-// Nome do diretório atual
+// Current directory name
 console.log(path.dirname(__filename));
 
-// Extensão do arquivo
+// File extension
 console.log(path.extname(__filename));
 
-// Criar objeto path
+// Create path object
 console.log(path.parse(__filename));
 
-// Juntar caminhos de arquivos
+// Merge file paths
 console.log(path.join(__dirname, "test", "test.html"));
